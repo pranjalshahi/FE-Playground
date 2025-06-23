@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Semantic-skeleton demo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --brand: #4f46e5;
+        --bg: #0f5f82;
+        --text: #1ccdbe;
+        font-family: "Roboto", sans-serif;
+      }
+      .dark {
+        --brand: #91a4ff;
+        --bg: #111827;
+        --text: #f3f4f6;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        padding: 1rem;
+      }
+      a {
+        color: var(--brand);
+        text-decoration: none;
+        margin-right: 0.5rem;
+      } /* 3️⃣ uses --brand */
+      header {
+        color: var(--brand);
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>"Hello, World!"</header>
+    <nav>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </nav>
+    <img src="https://via.placeholder.com/150" alt="PlaceHolder Image" />
+    <main>Hi!! This is Main Text.</main>
+    <footer>This is a copyright footer.</footer>
+  </body>
+</html>
