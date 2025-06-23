@@ -1,0 +1,29 @@
+body {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: clamp(3rem, 5vw + 1rem, 6rem);
+}
+h2 {
+  font-size: clamp(2rem, 4vw + 0.5rem, 4rem);
+}
+h3 {
+  font-size: clamp(1rem, 3vw + 0.25rem, 3rem);
+}
+
+/* transition demo */
+div {
+  height: 100px;
+  width: 100px;
+  background: lightblue;
+  border: 1px solid #888;
+  transition:
+    height 2s,
+    width 2s;
+  margin: 2rem;
+}
+div:hover {
+  height: 300px;
+  width: 300px;
+}
