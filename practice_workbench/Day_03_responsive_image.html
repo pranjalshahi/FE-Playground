@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dummy Responsive Image Example</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico"/>
+    <link rel="stylesheet" href="styles/Day_03_responsive_image.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <img
+      src="https://fastly.picsum.photos/id/1012/1440/400.jpg?hmac=de3BuaRhu9Q89DT-tZ7fyvoSKM5ZYPMcQxCfZ0SGYmw"
+      alt="This is the Hero Image"
+    />
+    <h1>This is the a Heading</h1>
+
+    <h2>Here below comes the Content part</h2>
+    <picture>
+        <!-- <source
+        type="image/webp"
+        srcset="../assets/images/image-480.webp 480w, ../assets/images/image-960.webp 960w, ../assets/images/image-1440.webp 1440w"
+        sizes="(min-width: 1200px) 960px, 100vw"
+        /> -->
+
+        <source 
+        media = "(min-width: 1200px)"
+        srcset="../assets/images/image-1440.webp"
+        />
+
+        <source 
+        media = "(min-width: 960px)"
+        srcset="../assets/images/image-960.webp"
+        />
+
+        <source 
+        media = "(min-width: 480px)"
+        srcset="../assets/images/image-480.webp"
+        />
+    <!-- If Fallback to jpeg occurs -->
+
+
+     <img 
+      srcset="../assets/images/image-480.jpg 480w, ../assets/images/image-960.jpg 960w, ../assets/images/image-1440.jpg 1440w"
+      alt="This is a jpeg image"
+      loading="lazy"
+      sizes="(min-width: 1200px) 960px, 100vw"
+      />
+
+ 
+        </picture>
+  </body>
+</html>
