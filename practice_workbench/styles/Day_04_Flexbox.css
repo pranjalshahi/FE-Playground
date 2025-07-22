@@ -1,0 +1,23 @@
+.NavBar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: yellow;
+    flex-wrap: wrap;
+    gap : 20px;
+
+}
+
+.nav-item{
+    text-align: center;
+    height: 60px;
+    width : 100px;
+    border: 1px solid white;
+}
+
+@media(max-width: 600px){
+    .NavBar{
+        flex-direction: column;
+    }
+
+}
